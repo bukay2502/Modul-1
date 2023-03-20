@@ -1,0 +1,23 @@
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> hewan = new ArrayList<>();
+
+        int i;
+        hewan.add("Sapi");
+        hewan.add("Kelinci");
+        hewan.add("Kambing");
+        hewan.add("Unta");
+        hewan.add("Domba");
+
+        for(i = 0; i < hewan.size(); i++){
+            hewan.remove(1);
+        }
+
+        for(i = 0; i < hewan.size(); i++){
+            System.out.println(hewan.get(i));
+        }
+
+    }
+}
